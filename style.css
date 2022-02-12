@@ -1,0 +1,223 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courgette', cursive;
+    color: #444;
+    height: 100%;
+}
+
+.wrapper {
+    width: 992px;
+    margin: 0 auto;
+}
+
+/*navigation*/
+
+#navigation {
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background: rgba(3, 3, 3, 0.6);
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right
+}
+
+#navigation ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation ul li a,
+#navigation ul li a:link,
+#navigation ul li a:visited {
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#navigation ul li a:hover {
+    background: transparent;
+    color: #d3d3d3
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 50px;
+    padding: 10px 0 0 0;
+}
+
+/*cover*/
+
+#cover {
+    background: url('images/background.jpeg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+}
+
+#cover .circle {
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
+    width: 350px;
+    height: 300px;
+    left: 50%;
+    margin-left: -200px;
+    font-size: 40px;
+    border-radius: 200px;
+    border: 10px solid #f9f9f9;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+/*about-us*/
+
+#about-us {
+    overflow: hidden;
+    padding: 130px 0;
+}
+
+#offer h1,
+#about-us h1,
+#contact h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#about-us a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400
+}
+
+#about-us .about-us-content {
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+#about-us .about-us-image {
+    float: right;
+    width: 60%;
+}
+
+#about-us .about-us-image img {
+    width: 100%;
+}
+
+/*offer*/
+
+#offer {
+    padding: 30px 0;
+}
+
+#offer .offer-circle {
+    width: 33%;
+    height: 400px;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s ease;
+    font-size: 18px;
+}
+
+#offer .offer-circle img {
+    width: 80%;
+    padding: 40px 10px;
+    transition: all 0.7s ease!important;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.offer-details {
+    text-align: left;
+    position: absolute;
+    background: rgba(3, 3, 3, 0.3);
+    color: #f9f9f9;
+    width: 100%;
+    padding: 100px 0 0 20px;
+    height: 300px;
+    top: -400px;
+    transition: all 0.7s ease;
+}
+
+#offer .offer-circle:hover .offer-details {
+    top: 0px!important;
+}
+
+#offer .offer-circle:hover img {
+    left: 150px;
+    top: -50px;
+}
+
+/*contact*/
+
+#contact {
+    overflow: hidden;
+    padding: 30px 0;
+    width: 100%;
+}
+
+#contact .contact-map {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.map {
+    height: 500px;
+    width: 100%!important;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#contact .contact-details {
+    text-align: left;
+    font-size: 20px;
+    width: calc(50% - 60px);
+    margin: 0;
+    padding: 0 30px;
+    float: right;
+}
+
+/*footer*/
+
+footer {
+    background-image: linear-gradient(#fff, #777);
+    text-align: center;
+    padding: 60px 0;
+    margin: 0;
+    color: #fff;
+}
+
+footer img {
+    height: 60px;
+}
